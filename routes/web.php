@@ -18,8 +18,8 @@ use App\Http\Controllers\MahasiswaController;
 |
 */
 //route login
-Route::get('/login', [AuthController::class, 'index'])->name('login')->middleware('guest');
-Route::post('/login', [AuthController::class, 'authenticate']);
+Route::get('/', [AuthController::class, 'index'])->name('login')->middleware('guest');
+Route::post('/', [AuthController::class, 'authenticate']);
 Route::get('/register', [AuthController::class, 'register']);
 Route::post('/register', [AuthController::class, 'process']);
 Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth');

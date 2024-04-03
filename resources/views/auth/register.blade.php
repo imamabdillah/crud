@@ -95,7 +95,7 @@
 
                     </div>
                 </form>
-                <a href="/login" class="text-center">I already have</a>
+                <a href="/" class="text-center">I already have</a>
             </div>
 
         </div>

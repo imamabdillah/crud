@@ -35,7 +35,7 @@ class AuthController extends Controller
             return redirect()->intended('/mahasiswa');
         } else {
             Alert::error('Error', 'Login failed !');
-            return redirect('/login');
+            return redirect('/');
         }
     }
 
@@ -60,7 +60,7 @@ class AuthController extends Controller
         $user = User::create($validated);
 
         Alert::success('Success', 'Register user has been successfully !');
-        return redirect('/login');
+        return redirect('/');
     }
 
     public function logout(Request $request)
@@ -70,6 +70,6 @@ class AuthController extends Controller
         request()->session()->invalidate();
         request()->session()->regenerateToken();
         Alert::success('Success', 'Log out success !');
-        return redirect('/login');
+        return redirect('/');
     }
 }

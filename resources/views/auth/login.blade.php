@@ -29,7 +29,7 @@
             </div>
             <div class="card-body">
                 <p class="login-box-msg">Sign in to start your session</p>
-                <form class="needs-validation" novalidate action="/login" method="POST">
+                <form class="needs-validation" novalidate action="/" method="POST">
                     @csrf
                     <div class="input-group mb-3">
                         <input type="email" name="email" class="form-control" placeholder="Email" required>
